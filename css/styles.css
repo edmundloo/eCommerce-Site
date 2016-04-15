@@ -6,27 +6,44 @@ width: 100%;
 }
 
 td {
+width: 25%;
+height: 200px;
 text-align: center;
+
 }
 
+
+
 .tile {
-width: 82%;
-height: 200px;
+width: 80%;
+height: 97%;
 border: 1px solid;
 border-radius: 20px;
-position: relative;
-left: 20px;
-margin: 15px 0px;
+margin: 0 auto;
+}
+
+.tile:hover {
+width: 83%;
+height: 100%;
 }
 
 .tile.one { background-image: url("../media/mario.jpg");}
 .tile.two { background-image: url("../media/future.jpg");}
 .tile.three { background-image: url("../media/obama.jpg");}
 .tile.four { background-image: url("../media/wolverine.jpg");}
+.tile.five { background-image: url("../media/google.jpg");}
+.tile.six { background-image: url("../media/mickey.jpg");}
+.tile.seven { background-image: url("../media/stitch.jpg");}
+.tile.eight { background-image: url("../media/bugs.jpg");}
+.tile.nine { background-image: url("../media/bart.jpg");}
+.tile.ten { background-image: url("../media/mortal_kombat.jpg");}
+.tile.eleven { background-image: url("../media/captain_america.jpg");}
+.tile.twelve { background-image: url("../media/the_flash.jpg");}
 
 .tile a {
 display: block;
-height: 200px;
+width: 100%;
+height: 100%;
 }
 
 /*universal styles*/
@@ -43,7 +60,7 @@ padding: 0;
 }
 
 .main-wrapper {
-max-width: 1000px;
+width: 1000px;
 padding: 0px;
 margin: 0 auto 150px;
 }
@@ -66,7 +83,7 @@ background-color: #000;
 position: absolute;
 bottom: 65px;
 width: 100%;
-height: 100px;
+height: 50px;
 background-color: #333333;
 }
 
