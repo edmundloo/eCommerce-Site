@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+	  <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Group 25 E-Commerce Site</title>
+		<link rel="stylesheet" href="css/styles.css"/>
+		
+		
+	
+		
+	</head>
+
+
+
+
+
+	<body>
+	
+	<nav>
+	<div class="nav-container">
+	<p class="logo-link"><a href="index.html">Unique Shoes</a></p>
+  	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn" onclick="showDropdown()">Products</a>
+			<div class="dropdown-content" id="myDropdown">
+			  <a href="#">Mario</a>
+			  <a href="#">Back II The Future</a>
+			  <a href="#">Obama</a>
+			  <a href="#">Wolverine</a>
+			  <a href="#">Google</a>
+			  <a href="#">Mickey</a>
+			  <a href="#">Stitch</a>
+			  <a href="#">Bugs</a>
+			  <a href="#">Bart</a>
+			  <a href="#">Mortal Kombat</a>
+			  <a href="#">Captain America</a>
+			  <a href="#">The Flash</a>
+			</div>
+		  </li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="#">Contact</a></li>
+  	</ul>
+  	</div>
+  	</nav>
+
+	
+	<div class="main-wrapper">
+
+	<h1 class="text-center">Contact Us</h1>
+	
+	<br />
+
+	
+	<div id="float_form">
+	<form name="contact_form" onsubmit="return checkForm()">
+		<label for="first_name">First Name<span class="red">*</span></label>
+		<input type="text" name="first_name" maxlength="50" width="30" required>
+		<label for="first_name">Last Name<span class="red">*</span></label>
+		<input name="last_name" maxlength="50" width="30" required>
+		<label for="email">Email<span class="red">*</span></label>
+		<input name="email" maxlength="80" width="50" required>
+		<label for="comments">Comments</label>
+		<textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+		<input type="submit" value="submit" id="submit_btn">
+	</form>
+	<div class="req_text"><p style="color:#000"><span class="red">*</span>required</p>
+	<p id="errors" class="red"></p>
+	</div></div>
+	
+	<div id="contact-text">
+	<p>Here at Unique Shoes, customer satisfaction is our highest priority.  We strive 
+	everyday for excellence in our products.  All of our shoes are made in the USA by 
+	experts shoe makers and designed by the top designers in the industry.</p>
+
+	<br /><br />
+	<p>Not only do we strive to provide the best products in the world, but we pride ourselves
+	on providing the best customer service in the world.  We want to answer any and all
+	questions or concerns you may have promptly and completely.  Please do not hesitate
+	to send us a message with any concern you may have.</p>
+
+	<br /><br />
+	<p>Or, if you simply want to tell us how happy you are with our product or the great
+	customer service you have received, we would love to hear it.  Pleasing our customers
+	is what gets us out of bed every morning.</p>
+
+
+	<br /><br />
+	<p>So please fill out this form to the right and let us know what's on your mind.  A 
+	customer service expert will contact you within 24 to 48 hours to answer your concerns
+	or just simply to say thank you.  Thank you for taking the time to reach out to us 
+	and remember, we want to be your one stop for all your footwear needs.</p>
+	</div>
+
+	</div>
+	
+	<footer>
+	<div class="sitemap"></div>
+	<p class="cpyrght">&copy; 2016 Group 25</p>
+	</footer>
+	
+	
+	
+	<script src="js/global.js"></script> 
+	
+	</body>
+
+</html>
