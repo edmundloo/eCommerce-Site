@@ -5,6 +5,8 @@ image2.src = "media/slide-two.jpg"
 var image3 = new Image()
 image3.src = "media/slide-three.jpg"
 
+
+/*this function changes the slide images on the homepage*/
 var step=1;
 function slideit()
 {
@@ -17,3 +19,25 @@ function slideit()
 }
 
 slideit();
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function showDropdown() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+	var i;
+	for (i = 0; i < dropdowns.length; i++) {
+	  var openDropdown = dropdowns[i];
+	  if (openDropdown.classList.contains('show')) {
+		openDropdown.classList.remove('show');
+	  }
+	}
+  }
+}
