@@ -256,8 +256,8 @@ height: 650px;
 /*form styles*/
 .red {color:red;}
 label {color: #fff;}
-input {display: block; width: 180px; margin: 5px 0;}
-form {max-width: 200px; padding:10px 0px 5px 12px; background-color: #7A8EA3;}
+input {width: 180px; margin: 5px 0;}
+form#contact{max-width: 200px; padding:10px 0px 5px 12px; background-color: #7A8EA3;}
 input#submit_btn {margin-top: 15px; width: 60px;}
 
 .req_text {
@@ -268,4 +268,15 @@ margin:0 auto;
 
 #float_form {
 float: right;
+}
+
+.detail_form {
+width: 350px;
+text-align: right;
+margin-left: 20px;
+float: right;
+}
+
+.product_description {
+clear: both;
 }
