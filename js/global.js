@@ -7,7 +7,7 @@ image3.src = "media/slide-three.jpg"
 
 
 /*this function changes the slide images on the homepage*/
-var step=1;
+/*var step=1;
 function slideit()
 {
 	document.images.slide.src = eval("image"+step+".src");
@@ -18,7 +18,7 @@ function slideit()
 	setTimeout("slideit()",2500);
 }
 
-slideit();
+slideit();*/
 
 
 /* When the user clicks on the button, 
@@ -41,3 +41,18 @@ window.onclick = function(event) {
 	}
   }
 }
+
+
+function productImage(){
+	var x = document.getElementById("image-container").children;
+	
+	for(var i = 0; i < x.length; i++){
+		x[i].onclick = changeActive;
+	}
+	
+	function changeActive() {
+		document.getElementById("active-image")["src"] = this["src"];
+	}
+}
+
+productImage();

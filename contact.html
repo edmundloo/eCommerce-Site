@@ -55,7 +55,7 @@
 
 	
 	<div id="float_form">
-	<form id="contact" name="contact_form" onsubmit="return checkForm()">
+	<form id="contact" name="contact_form" method="post" action="send_form_email.php">
 		<label for="first_name">First Name<span class="red">*</span></label>
 		<input type="text" name="first_name" maxlength="50" width="30" required>
 		<label for="first_name">Last Name<span class="red">*</span></label>
