@@ -1,0 +1,76 @@
+<html>
+<head>
+
+	<style>
+	.detail_form {
+	text-align: right;
+	width: 350px;
+	background-color: grey;
+	}
+	
+	
+	input {
+	margin: 10px 0;
+	}
+	
+	</style>
+
+
+</head>
+
+<body>
+
+	<div class="detail_form">
+	<form action="mailto:hello@edmundscameras.com?subject=Order Confirmation" enctype="text/plain" method="post" id="details">
+	<fieldset>
+		<legend>Order Details</legend>
+	  Product ID:
+	  <input type="text" name="productId" value="Mario" required><br>
+	  Size:
+	  <select name="size">
+		<option value="7">7</option>
+		<option value="7.5">7.5</option>
+		<option value="8">8</option>
+		<option value="8.5">8.5</option>
+	  </select>
+	  Quantity:
+	  <select name="quantity">
+		<option value="7">7</option>
+		<option value="7.5">7.5</option>
+		<option value="8">8</option>
+		<option value="8.5">8.5</option>
+	  </select><br>
+	  First Name:
+	  <input type="text" name="firstname" required><br>
+	  Last Name:
+	  <input type="text" name="lastname" required><br>
+	  Phone:
+	  <input type="phone" name="phone" required><br>
+	  Shipping Address:
+	  <input type="text" name="shipAddress" required><br>
+	  Address Line 2:
+	  <input type="text" name="addressTwo" required><br>
+	  City:
+	  <input type="text" name="city" required><br>
+	  State:
+	  <select name="state">
+		<option value="AL">AL</option>
+		<option value="CA">CA</option>
+		<option value="TX">TX</option>
+		<option value="OR">OR</option>
+	  </select>
+	  Zipcode:
+	  <input name="zip" maxlength="10" width="10" style="width: 50px;" required><br>
+	  
+	  
+	  <input type="submit" value="Submit">
+	</fieldset>
+	</form>
+	
+	</div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<title>Edmunds Cameras</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles2.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        
+        
+    </head>
+    <body class="site">
+        
+    <nav>
+	<div class="nav-container">
+	<p class="logo-link"><a href="index.html">Edmunds Cameras</a></p>
+  	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn" onclick="showDropdown()">Products</a>
+			<div class="dropdown-content" id="myDropdown">
+			  <a href="zm_details.html">Zeiss Ikon ZM</a>
+			  <a href="m3_details.html">Leica M3</a>
+			  <a href="m6_details.html">Leica M6</a>
+			  <a href="cle_details.html">Minolta CLE</a>
+			  <a href="canonet_details.html">Canon Canonet</a>
+			  <a href="f3af_details.html">Nikon F3AF</a>
+			  <a href="mp_details.html">Leica MP</a>
+			  <a href="hi-matic_details.html">Minolta HI-MATIC</a>
+			  <a href="rollei_details.html">Rollei Rolleiflex</a>
+			  <a href="124g_details.html">Yashica-Mat 124G</a>
+			  <a href="gw690II_details.html">Fuji GW690II</a>
+			  <a href="500cm_details.html">Hasselblad 500CM</a>
+			</div>
+		  </li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+  	</ul>
+  	</div>
+  	</nav>
+        
+        
+        
+        <div class="main-wrapper">
+            <div class="content-wrapper">
+                <div class="fgrid fgrid--gutters">
+                    <div class="fgrid-cell">
+                        <div class="image-viewer">
+                            <div id="image-container" class="image-viewer-thumbs">
+                                <img src="media/camera_photos/large/Leica-M6-1.jpg" width="75px" height="75px">
+                                <img src="media/camera_photos/large/Leica-M6-2.jpg" width="75px" height="75px">
+                                <img src="media/camera_photos/large/Leica-M6-3.jpg" width="75px" height="75px">
+                                <img src="media/camera_photos/large/Leica-M6-4.jpg" width="75px" height="75px">
+                            </div>
+                            <div class="image-viewer-image">
+                                <img id="active-image" src="media/camera_photos/large/Leica-M6-1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fgrid-cell">
+                        <div class="product-details">
+                            <h1 class="product-name">
+                                M6 Classic
+                            </h1>
+                            <h2 class="product-brand">
+                                by Leica
+                            </h2>
+                            <hr>
+                            <div class="product-price">
+                                $350
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="fgrid fgrid--gutters"> 
+                    <div class="fgrid-cell">
+                        <div class="product-description"> 
+                        <h2 class="description-title">
+                            Description
+                        </h2>
+                            <p class="description-body">
+                                A semi-modern film rangefinder with metering and some more modern features. A great Leica to start with and keep forever.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="fgrid fgrid--gutters"> 
+                    <div class="fgrid-cell">
+                        <div class="detail_form">
+						<form action="mailto:hello@edmundscameras.com?subject=Order Confirmation" enctype="text/plain" method="post" id="details">
+						<fieldset>
+							<legend>Order Details</legend>
+						  Product ID:
+						  <input type="text" name="productId" value="Leica-M6" required><br>
+						  Quantity:
+						  <select name="quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						  </select><br>
+						  First Name:
+						  <input type="text" name="firstname" required><br>
+						  Last Name:
+						  <input type="text" name="lastname" required><br>
+						  Phone:
+						  <input type="phone" name="phone" required><br>
+						  Credit Card Info:
+						  <input type="radio" name="credit" value="Visa" style="width: 25px;" checked>Visa
+						  <input type="radio" name="credit" value="Mastercard" style="width:25px;">MC
+						  <input type="radio" name="credit" value="Amex" style="width:25px;">AMEX<br>
+						  Card Number:
+						  <input type="text" name="card_number" required><br>
+						  Shipping Method:
+						  <input type="radio" name="shipping" value="priority" style="width: 25px;" checked>Priority
+						  <input type="radio" name="shipping" value="ups" style="width:25px;">UPS<br>
+						  Shipping Address:
+						  <input type="text" name="shipAddress" required><br>
+						  Address Line 2:
+						  <input type="text" name="addressTwo" required><br>
+						  City:
+						  <input type="text" name="city" required><br>
+						  State:
+						  <select name="state">
+							<option value="AL">AL</option>
+							<option value="CA">CA</option>
+							<option value="TX">TX</option>
+							<option value="OR">OR</option>
+						  </select>
+						  Zipcode:
+						  <input name="zip" maxlength="10" width="10" style="width: 50px;" required><br>
+	  
+	  
+						  <input type="submit" value="Submit">
+						</fieldset>
+						</form>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        
+        
+        <footer>
+		<div class="sitemap"></div>
+		<p class="cpyrght">&copy;2016 Edmund's Cameras</p>
+		</footer>
+        
+        
+        <script src="js/global.js"></script>
+        <script>
+        	productImage();
+        </script>
+    </body>
+</html>

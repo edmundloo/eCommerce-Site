@@ -1,13 +1,13 @@
 var image1 = new Image()
-image1.src = "media/slide-one.jpg"
+image1.src = "media/slide_one.jpg"
 var image2 = new Image()
-image2.src = "media/slide-two.jpg"
+image2.src = "media/slide_two.jpg"
 var image3 = new Image()
-image3.src = "media/slide-three.jpg"
+image3.src = "media/slide_three.jpg"
 
 
 /*this function changes the slide images on the homepage*/
-/*var step=1;
+var step=1;
 function slideit()
 {
 	document.images.slide.src = eval("image"+step+".src");
@@ -18,7 +18,7 @@ function slideit()
 	setTimeout("slideit()",2500);
 }
 
-slideit();*/
+//slideit();
 
 
 /* When the user clicks on the button, 
@@ -47,12 +47,13 @@ function productImage(){
 	var x = document.getElementById("image-container").children;
 	
 	for(var i = 0; i < x.length; i++){
+		console.log(x[i]["src"]);
 		x[i].onclick = changeActive;
 	}
 	
 	function changeActive() {
+		console.log("changing " + document.getElementById("active-image")["src"] + " to " + this["src"]);
 		document.getElementById("active-image")["src"] = this["src"];
 	}
 }
 
-productImage();

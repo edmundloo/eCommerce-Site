@@ -33,18 +33,19 @@ width: 83%;
 height: 90%;
 }
 
-.tile.one { background-image: url("../media/Zeiss-Ikon_home.jpg");}
-.tile.two { background-image: url("../media/future.jpg");}
-.tile.three { background-image: url("../media/obama.jpg");}
-.tile.four { background-image: url("../media/wolverine.jpg");}
-.tile.five { background-image: url("../media/google.jpg");}
-.tile.six { background-image: url("../media/mickey.jpg");}
-.tile.seven { background-image: url("../media/stitch.jpg");}
-.tile.eight { background-image: url("../media/bugs.jpg");}
-.tile.nine { background-image: url("../media/bart.jpg");}
-.tile.ten { background-image: url("../media/mortal_kombat.jpg");}
-.tile.eleven { background-image: url("../media/captain_america.jpg");}
-.tile.twelve { background-image: url("../media/the_flash.jpg");}
+
+.tile.one { background-image: url("../media/camera_photos/small/Zeiss-Ikon-1.jpg");}
+.tile.two { background-image: url("../media/camera_photos/small/Leica-M3-1.jpg");}
+.tile.three { background-image: url("../media/camera_photos/small/Leica-M6-1.jpg");}
+.tile.four { background-image: url("../media/camera_photos/small/Minolta-CLE-1.jpg");}
+.tile.five { background-image: url("../media/camera_photos/small/Canon-Canonet-1.jpg");}
+.tile.six { background-image: url("../media/camera_photos/small/Nikon-F3AF-1.jpg");}
+.tile.seven { background-image: url("../media/camera_photos/small/Leica-MP-1.jpg");}
+.tile.eight { background-image: url("../media/camera_photos/small/Minolta-HI-MATIC-F-1.jpg");}
+.tile.nine { background-image: url("../media/camera_photos/small/Rollei-Rolleiflex-1.jpg");}
+.tile.ten { background-image: url("../media/camera_photos/small/Yashica-Mat124G-1.jpg");}
+.tile.eleven { background-image: url("../media/camera_photos/small/Fuji-GW690II-1.jpg");}
+.tile.twelve { background-image: url("../media/camera_photos/small/Hasselblad-500CM-1.jpg");}
 
 .tile a {
 display: block;
@@ -109,7 +110,7 @@ display:inline-block;
 .dropdown-content {
 display: none;
 position: absolute;
-width: 100px;
+width: 155px;
 background-color: #538cc6;
 z-index: 5;
 }
@@ -273,8 +274,7 @@ float: right;
 .detail_form {
 width: 350px;
 text-align: right;
-margin-left: 20px;
-float: right;
+margin: 0 auto;
 }
 
 .product_description {

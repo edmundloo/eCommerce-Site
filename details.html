@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<title>Edmunds Cameras</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles2.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        
+        
+    </head>
+    <body class="site">
+        
+        <nav>
+		<div class="nav-container">
+		<p class="logo-link"><a href="index.html">Unique Shoes</a></p>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn" onclick="showDropdown()">Products</a>
+				<div class="dropdown-content" id="myDropdown">
+				  <a href="#">Mario</a>
+				  <a href="#">Back II The Future</a>
+				  <a href="#">Obama</a>
+				  <a href="#">Wolverine</a>
+				  <a href="#">Google</a>
+				  <a href="#">Mickey</a>
+				  <a href="#">Stitch</a>
+				  <a href="#">Bugs</a>
+				  <a href="#">Bart</a>
+				  <a href="#">Mortal Kombat</a>
+				  <a href="#">Captain America</a>
+				  <a href="#">The Flash</a>
+				</div>
+			  </li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+		</nav>
+        
+        
+        
+        <div class="main-wrapper">
+            <div class="content-wrapper">
+                <div class="fgrid fgrid--gutters">
+                    <div class="fgrid-cell">
+                        <div class="image-viewer">
+                            <div id="image-container" class="image-viewer-thumbs">
+                                <img src="http://placehold.it/75x75?text=thumb1" width="75" height="75">
+                                <img src="http://placehold.it/75x75?text=thumb2" width="75" height="75">
+                                <img src="http://placehold.it/75x75?text=thumb3" width="75" height="75">
+                                <img src="http://placehold.it/75x75?text=thumb4" width="75" height="75">
+                            </div>
+                            <div class="image-viewer-image">
+                                <img id="active-image" src="http://placehold.it/500x500" width="500" height="500">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fgrid-cell">
+                        <div class="product-details">
+                            <h1 class="product-name">
+                                {{product_name}}
+                            </h1>
+                            <h2 class="product-brand">
+                                by {{product_brand}}
+                            </h2>
+                            <hr>
+                            <div class="product-price">
+                                {{product_price}}
+                            </div>
+                            <div class="product-styles">
+                                <div class="style-name">
+                                    {{style_name}}
+                                </div>
+                                <div class="style-id">
+                                    Style: <div class="#style-number"> {{style_number}}</div>
+                                </div>
+                            </div>
+                            <div class="product-size">
+                                <label>Size:</label>
+                                <select list="sizes">
+                                    <datalist id="sizes">
+                                        <option>6.0</option>
+                                        <option>6.5</option>
+                                        <option>7.0</option>
+                                        <option>7.5</option>
+                                        <option>8.0</option>
+                                        <option>8.5</option>
+                                        <option>9.0</option>
+                                    </datalist>
+                                </select>
+                            </div>
+                            <div class="product-quantity">
+                                <label>Quantity:</label>
+                                    <select id="quantity">
+                                    </select>
+                                    <script>
+                                        var options = "";
+                                        for(var i = 1; i < 100; i++){
+                                            options += "<option>" + i + "</option>";
+                                        }
+                                        document.getElementById("quantity").innerHTML = options;
+                                    </script>
+                            </div>
+                            <div class="cart-add">
+                                <button class="checkout">Check Out</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="fgrid fgrid--gutters"> 
+                    <div class="fgrid-cell">
+                        <div class="product-description"> 
+                        <h2 class="description-title">
+                            Description
+                        </h2>
+                            <p class="description-body">
+                                {{product_description}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="fgrid fgrid--gutters"> 
+                    <div class="fgrid-cell">
+                        <div class="detail_form">
+						<form action="mailto:hello@edmundscameras.com?subject=Order Confirmation" enctype="text/plain" method="post" id="details">
+						<fieldset>
+							<legend>Order Details</legend>
+						  Product ID:
+						  <input type="text" name="productId" value="Mario" required><br>
+						  Size:
+						  <select name="size">
+							<option value="7">7</option>
+							<option value="7.5">7.5</option>
+							<option value="8">8</option>
+							<option value="8.5">8.5</option>
+						  </select>
+						  Quantity:
+						  <select name="quantity">
+							<option value="7">7</option>
+							<option value="7.5">7.5</option>
+							<option value="8">8</option>
+							<option value="8.5">8.5</option>
+						  </select><br>
+						  First Name:
+						  <input type="text" name="firstname" required><br>
+						  Last Name:
+						  <input type="text" name="lastname" required><br>
+						  Phone:
+						  <input type="phone" name="phone" required><br>
+						  Shipping Method:
+						  <input type="radio" name="shipping" value="priority" style="width: 25px;" checked>Priority
+						  <input type="radio" name="shipping" value="ups" style="width:25px;">UPS<br>
+						  Shipping Address:
+						  <input type="text" name="shipAddress" required><br>
+						  Address Line 2:
+						  <input type="text" name="addressTwo" required><br>
+						  City:
+						  <input type="text" name="city" required><br>
+						  State:
+						  <select name="state">
+							<option value="AL">AL</option>
+							<option value="CA">CA</option>
+							<option value="TX">TX</option>
+							<option value="OR">OR</option>
+						  </select>
+						  Zipcode:
+						  <input name="zip" maxlength="10" width="10" style="width: 50px;" required><br>
+	  
+	  
+						  <input type="submit" value="Submit">
+						</fieldset>
+						</form>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        
+        
+        <footer>
+		<div class="sitemap"></div>
+		<p class="cpyrght">&copy;2016 Unique Shoes</p>
+		</footer>
+        
+        <script src="js/global.js"></script>
+        
+    </body>
+</html>
