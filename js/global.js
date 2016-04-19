@@ -1,9 +1,9 @@
 var image1 = new Image()
-image1.src = "media/slide-one.jpg"
+image1.src = "media/slide_one.jpg"
 var image2 = new Image()
-image2.src = "media/slide-two.jpg"
+image2.src = "media/slide_two.jpg"
 var image3 = new Image()
-image3.src = "media/slide-three.jpg"
+image3.src = "media/slide_three.jpg"
 
 
 /*this function changes the slide images on the homepage*/
